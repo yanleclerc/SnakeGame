@@ -10,8 +10,9 @@ const gameBoard = document.getElementById('game-board');
 function main(currentTime) {
     if(gameOver){
         if(confirm("Game Over,Cliquez sur ok pour recommencer")){
-            window.location='/'
+            window.location = '/'
         }
+        return
     }
 
     window.requestAnimationFrame(main)
